@@ -6,9 +6,11 @@
 conda create -n PPOCR python=3.12 -y
 conda activate PPOCR
 ```
-建议创建python虚拟环境，参照（https://github.com/PaddlePaddle/PaddleOCR）安装好paddlepaddle、paddleocr、paddle2onnx，用以下命令将mobile模型导出为对应的onnx模型：
+建议创建python虚拟环境，安装好paddlepaddle、paddleocr、paddle2onnx，
+参照(https://github.com/PaddlePaddle/PaddleOCR)
 
 ## 导出模型（Paddle -> ONNX）
+用以下命令将mobile模型导出为对应的onnx模型：
 ### 检测：
 ```
 paddle2onnx --model_dir ./PP-OCRv5_mobile_det_infer --model_filename inference.json --params_filename inference.pdiparams --save_file ./det_mobile.onnx --opset_version 11 --enable_onnx_checker True
@@ -55,6 +57,9 @@ bash download_dataset.sh
 参考命令如下：
 
 ```
+pulsar2 build --input det_mobile_sim_static.onnx --config ./det.json --output_dir ./det --output_name det.axmodel  --target_hardware AX650 --compiler.check 0
+
+也可将参数写进json中，直接执行：
 pulsar2 build --config ./det.json
 pulsar2 build --config ./rec.json
 pulsar2 build --config ./cls.json
