@@ -6,7 +6,7 @@ PPOCRv5 DEMO on Axera
 
 ## 支持平台
 
-- [√] AX650N
+- [x] AX650N
 - [ ] AX630C
 
 ## 模型转换
@@ -25,18 +25,8 @@ PPOCRv5 DEMO on Axera
 #### Requirements
 
 ```
-mkdir /opt/site-packages
 cd python
-pip3 install -r requirements.txt --prefix=/opt/site-packages
-``` 
-
-#### 添加环境变量
-
-将以下两行添加到 `/root/.bashrc`(实际添加的路径需要自行检查)后，重新连接终端或者执行 `source ~/.bashrc`
-
-```
-export PYTHONPATH=$PYTHONPATH:/opt/site-packages/local/lib/python3.10/dist-packages  
-export PATH=$PATH:/opt/site-packages/local/bin
+pip3 install -r requirements.txt
 ``` 
 
 #### 运行
