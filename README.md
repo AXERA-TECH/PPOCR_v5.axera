@@ -2,7 +2,7 @@
 PPOCRv5 DEMO on Axera
 
 - 目前支持  Python 语言 
-- 预编译模型下载[models](https://github.com/AXERA-TECH/Metric3D.axera/releases/download/v1.0.0/models.tar.gz)，下载后存放在./model目录下。如需自行转换请参考[模型转换](/model_convert/README.md)
+- 预编译模型下载[models](https://github.com/wzf19947/PPOCR_v5/releases/download/v1.0.0/model.tar.gz)。如需自行转换请参考[模型转换](/model_convert/README.md)
 
 ## 支持平台
 
@@ -71,7 +71,7 @@ python3 infer_axmodel.py
 | --rec_model_dir | 识别模型路径 | 
 | --cls_model_dir | 分类模型路径 | 
 | --character_dict_path | 识别字典路径 | 
-| --det_limit_side_len | 检测模型输入尺寸 | 
+| --det_limit_side_len | 检测模型尺寸 | 
 | --rec_image_shape | 识别模型尺寸 | 
 | --cls_image_shape | 分类模型尺寸 | 
 

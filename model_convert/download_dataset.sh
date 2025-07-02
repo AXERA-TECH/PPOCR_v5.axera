@@ -1,1 +1,2 @@
-wget https://github.com/AXERA-TECH/DepthAnythingV2.axera/releases/download/v1.0.0/calib-cocotest2017.tar
+wget https://github.com/wzf19947/PPOCR_v5/releases/download/v1.0.0/rec_pic.tar.gz
+wget https://github.com/wzf19947/PPOCR_v5/releases/download/v1.0.0/ocr_pic.tar.gz
